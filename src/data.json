@@ -1,0 +1,226 @@
+[
+  {
+    "dzień": 1,
+    "dziennie": 12,
+    "łączna ilość godzin do przepracownia": 12,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 2,
+    "dziennie": 12,
+    "łączna ilość godzin do przepracownia": 24,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 3,
+    "dziennie": 12,
+    "łączna ilość godzin do przepracownia": 36,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 4,
+    "dziennie": 12,
+    "łączna ilość godzin do przepracownia": 48,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 5,
+    "dziennie": 12,
+    "łączna ilość godzin do przepracownia": 60,
+    "ja": 36,
+    "Bartek": 38,
+    "razem dotychczas": 74
+  },
+  {
+    "dzień": 6,
+    "dziennie": 0,
+    "łączna ilość godzin do przepracownia": 60,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 7,
+    "dziennie": 0,
+    "łączna ilość godzin do przepracownia": 60,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 8,
+    "dziennie": 12,
+    "łączna ilość godzin do przepracownia": 72,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 9,
+    "dziennie": 6,
+    "łączna ilość godzin do przepracownia": 78,
+    "ja": 48,
+    "Bartek": 44,
+    "razem dotychczas": 92
+  },
+  {
+    "dzień": 10,
+    "dziennie": 12,
+    "łączna ilość godzin do przepracownia": 90,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 11,
+    "dziennie": 12,
+    "łączna ilość godzin do przepracownia": 102,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 12,
+    "dziennie": 12,
+    "łączna ilość godzin do przepracownia": 114,
+    "ja": 67,
+    "Bartek": 68,
+    "razem dotychczas": 135
+  },
+  {
+    "dzień": 13,
+    "dziennie": 0,
+    "łączna ilość godzin do przepracownia": 114,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 14,
+    "dziennie": 0,
+    "łączna ilość godzin do przepracownia": 114,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 15,
+    "dziennie": 12,
+    "łączna ilość godzin do przepracownia": 126,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 16,
+    "dziennie": 6,
+    "łączna ilość godzin do przepracownia": 132,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 17,
+    "dziennie": 6,
+    "łączna ilość godzin do przepracownia": 138,
+    "ja": 74,
+    "Bartek": 78,
+    "razem dotychczas": 152
+  },
+  {
+    "dzień": 18,
+    "dziennie": 12,
+    "łączna ilość godzin do przepracownia": 150,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 19,
+    "dziennie": 12,
+    "łączna ilość godzin do przepracownia": 162,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 20,
+    "dziennie": 0,
+    "łączna ilość godzin do przepracownia": 162,
+    "ja": 87,
+    "Bartek": 103,
+    "razem dotychczas": 190
+  },
+  {
+    "dzień": 21,
+    "dziennie": 0,
+    "łączna ilość godzin do przepracownia": 162,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 22,
+    "dziennie": 12,
+    "łączna ilość godzin do przepracownia": 174,
+    "ja": 93,
+    "Bartek": 109,
+    "razem dotychczas": 202
+  },
+  {
+    "dzień": 23,
+    "dziennie": 12,
+    "łączna ilość godzin do przepracownia": 186,
+    "ja": 98,
+    "Bartek": 114,
+    "razem dotychczas": 212
+  },
+  {
+    "dzień": 24,
+    "dziennie": 12,
+    "łączna ilość godzin do przepracownia": 198,
+    "ja": 103,
+    "Bartek": 119,
+    "razem dotychczas": 222
+  },
+  {
+    "dzień": 25,
+    "dziennie": 12,
+    "łączna ilość godzin do przepracownia": 210,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 26,
+    "dziennie": 12,
+    "łączna ilość godzin do przepracownia": 222,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 27,
+    "dziennie": 0,
+    "łączna ilość godzin do przepracownia": 222,
+    "ja": "",
+    "Bartek": "",
+    "razem dotychczas": 0
+  },
+  {
+    "dzień": 28,
+    "dziennie": 0,
+    "łączna ilość godzin do przepracownia": 222,
+    "ja": 115,
+    "Bartek": 125,
+    "razem dotychczas": 240
+  }
+]
