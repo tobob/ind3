@@ -1,86 +1,64 @@
-import React, { useState } from "react";
+import React, { useState, useMemo, useEffect, useRef } from "react";
 import { render } from "react-dom";
+import { useObservable, useSubscription } from "observable-hooks";
+import { map } from "rxjs/operators";
+import { interval } from "rxjs";
+import takeRight from "lodash/takeRight";
+
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
-import data from "./data.json";
-
-const options = {
-  xAxis: { title: "dzień" },
-  yAxis: [
-    {
-      title: {
-        text: "Ile mielimy przepracować",
-      },
-    },
-    {
-      title: {
-        text: "Ile przepracowalismy",
-      },
-      opposite: true,
-    },
-  ],
-  title: {
-    text: "Godziny na BRZW",
-  },
-  series: [
-    {
-      yAxis: 0,
-      name: "Ile mamy przepracować",
-      data: data.map((el) => el["łączna ilość godzin do przepracownia"]),
-    },
-    {
-      yAxis: 1,
-      type: "spline",
-      connectNulls: true,
-      connectEnds: true,
-      name: "Razem dotychczas",
-      data: data.map((el) => el["razem dotychczas"] || null),
-    },
-  ],
+const getRandomInt = (min, max) => {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
 };
 
 const App = () => {
-  const [name, setName] = useLocalStorage("name", "Bob");
+  const [bt, setBt] = useState([]);
+  const [et, setEt] = useState([]);
+
+  const sub = useRef();
+  const bt$ = useObservable(() =>
+    interval(1000).pipe(map(() => getRandomInt(100, 1000)))
+  );
+
+  const et$ = useObservable(() =>
+    interval(1000).pipe(map(() => getRandomInt(10, 50)))
+  );
+
+  const pushtoBT = (val) => setBt(takeRight([...bt, val], 30));
+  const pushtoET = (val) => setEt(takeRight([...et, val], 30));
+
+  useSubscription(bt$, pushtoBT);
+  useSubscription(et$, pushtoET);
+
+  const options = useMemo(() => ({
+    title: {
+      text: "Bitcoin and Etherium",
+    },
+    xAxis: {
+      type: "datetime",
+    },
+    series: [
+      {
+        data: bt,
+        name: "BT",
+        type: "area",
+      },
+      {
+        data: et,
+        name: "Et",
+        type: "area",
+      },
+    ],
+  }));
 
   return (
     <div>
       <HighchartsReact highcharts={Highcharts} options={options} />
-      <hr></hr>
-      <label>Kto to stworzył!?</label>
-      <input
-        type="text"
-        placeholder="Kto to stworzył"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
     </div>
   );
-};
-
-const useLocalStorage = (key, initialValue) => {
-  const [storedValue, setStoredValue] = useState(() => {
-    try {
-      const item = window.localStorage.getItem(key);
-      return item ? JSON.parse(item) : initialValue;
-    } catch (error) {
-      console.log(error);
-      return initialValue;
-    }
-  });
-
-  const setValue = (value) => {
-    try {
-      const valueToStore =
-        value instanceof Function ? value(storedValue) : value;
-      setStoredValue(valueToStore);
-      window.localStorage.setItem(key, JSON.stringify(valueToStore));
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  return [storedValue, setValue];
 };
 
 render(<App />, document.getElementById("root"));
